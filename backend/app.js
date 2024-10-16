@@ -25,7 +25,7 @@ app.use(express.urlencoded({extended: true}));
 router.get('/' ,  (req,res,next) => {
        res.send({
         text: "server working fine",
-        sucess: true;
+        sucess: true
                 });
        })
 
