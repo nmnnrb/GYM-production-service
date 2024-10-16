@@ -18,7 +18,20 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-router.post('/send/mail' , async (req,resizeBy,next) => {
+
+
+
+
+router.get('/' ,  (req,res,next) => {
+       res.send({
+        text: "server working fine",
+        sucess: true;
+                });
+       })
+
+///
+
+router.post('/send/mail' , async (req,res,next) => {
        const {name ,email , message} = req.body;
         
        if(!name || !email || !message){
