@@ -1,2 +1,2 @@
 # GYM-production-service
-Gym website using React, Node.js, and Express, with a special focus on backend integration. T
+Ggym website using React, Node.js, and Express, with a special focus on backend integration. The website allows clients to send queries directly through a contact form, and the backend securely processes these messages, sending them directly to your Gmail for easy management and prompt responses. This project showcases my skills in full-stack development and effective communication between the frontend and backend.
