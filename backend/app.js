@@ -36,7 +36,7 @@ router.post('/send/mail' , async (req,res,next) => {
         
        if(!name || !email || !message){
         return next(
-            resizeBy.status(400).json({
+            res.status(400).json({
                 sucess:false,
                 message: "Please fill in all fields"
             })
@@ -50,12 +50,12 @@ router.post('/send/mail' , async (req,res,next) => {
                 message: message,
                 userEmail: email, 
             });
-            resizeBy.status(200).json({
+            res.status(200).json({
                 sucess: true,
                 message: "Email sent successfully"
             })
         } catch (error) {
-             resizeBy.status(500).json({
+             res.status(500).json({
                 sucess: false,
                 message: "Server ERROR"
             })
